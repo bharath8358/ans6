@@ -1,5 +1,5 @@
 ---
-- hosts: all
+- hosts: 172.31.31.226
   become: yes
   tasks:
   - name: to create an ec2 instance
