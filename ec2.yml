@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - name: ec2 instance
-    amazon.aws.ec2:
+  - amazon.aws.ec2:
       key_name: bharathreddy
       instance_type: t2.micro
       image: ami-09a1690236c935296
