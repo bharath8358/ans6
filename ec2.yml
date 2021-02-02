@@ -1,5 +1,5 @@
 ---
-  hosts: 172.31.31.226
+- hosts: local host
   become: yes
   tasks:
   - name: ec2 instance
