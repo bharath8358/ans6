@@ -2,7 +2,6 @@
 - hosts: 172.31.31.226
   become: yes
   tasks:
-  - name: to create an ec2 instance
     amazon.aws.ec2:
       key_name: bharathreddy
       instance_type: t2.micro
