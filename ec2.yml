@@ -1,0 +1,13 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - nmae: to create an ec2 instance
+    amazon.aws.ec2:
+      key_name: bharathreddy
+      instance_type: t2.micro
+      image: ami-09a1690236c935296
+      region: "{{ ohio }}"
+      count: 3
+      vpc_subnet_id: subnet-68a6a512
+      assign_public_ip: yes
